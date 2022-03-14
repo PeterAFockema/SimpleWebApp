@@ -1,5 +1,9 @@
 package com.develogical.app;
 
+/**
+ * QueryProcessor
+ * This class is used for processing search queries from the Web App.
+ */
 public class QueryProcessor {
     public String process(final String query) {
         String returnStatement = "";

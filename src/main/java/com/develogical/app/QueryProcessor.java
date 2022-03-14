@@ -1,12 +1,15 @@
 package com.develogical.app;
 
 public class QueryProcessor {
-    public String process(String query) {
+    public String process(final String query) {
+        String returnStatement = "";
         if (query.toLowerCase().contains("shakespeare")) {
-            return "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
+            returnStatement = "William Shakespeare (26 April 1564 - 23 April 1616) was an " +
                     "English poet, playwright, and actor, widely regarded as the greatest " +
                     "writer in the English language and the world's pre-eminent dramatist.";
+        } else {
+            returnStatement = "We do not know this person/ animal/ vegetable/ mineral or else";
         }
-        return "";
+        return returnStatement;
     }
 }
